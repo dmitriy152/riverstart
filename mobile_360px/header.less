@@ -1,0 +1,144 @@
+.header {
+    background-color: #1F2032;
+    padding: 25px 30px 25px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+.header__services {
+    display: none;
+}
+.header__navigation {
+    display: none;
+}
+.header__popup {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    z-index: 3;
+    top: -1000px;
+    left: 0px;
+    width: 100%;
+    background-color: white;
+    transition: all 2s ease-in-out;
+    .nav__conteiner {
+        display: flex;
+        flex-direction: column;
+        padding: 25px 30px 40px 30px;
+    }
+    .gamburger__logo {
+        margin-bottom: 52px;
+    }
+}
+.nav__list__element {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 133px;
+    .nav__element {
+        text-decoration: none;
+        font-weight: 400;
+        font-size: 38px;
+        line-height: 110%;
+        letter-spacing: -0.02em;
+        color: #15141A;
+        margin-bottom: 36px;
+    }
+}
+.media__social__conteiner {
+    display: flex;
+    justify-content: space-between;
+    margin-right: 55px;
+    h3 {
+        margin: 0px;
+    }
+    .title {
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 120%;
+        letter-spacing: 0.01em;
+        color: #9A9AAD;
+        margin-bottom: 17px;
+    }
+    .e-mail {
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 100%;
+        letter-spacing: 0.01em;
+        color: #15141A;
+        margin-bottom: 17px;
+    }
+    .phone{
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 100%;
+        letter-spacing: 0.01em;
+        color: #15141A;
+    }
+    .link__item {
+        a{
+            text-decoration: none;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 100%;
+            letter-spacing: 0.01em;
+            color: #15141A;
+        }
+    }
+    .facebook {
+        margin-bottom: 12px;
+    }
+    .instagram {
+        margin-bottom: 12px;
+    }
+}
+.header__popup-active {
+    top: 0px;
+    transition: all 2s ease-in-out;
+}
+.header__button__conteiner {
+    display: none;
+}
+.header__gamburger {
+    position: absolute;
+    top: 25px;
+    right: 30px;
+    z-index: 5;
+    .line {
+        position: relative;
+        margin-top: 5px;
+        width: 23px;
+        height: 2px;
+        background: #F7F7FA;
+        transition: all 1s ease-in-out;
+    }
+    .line::before {
+        content: "";
+        position: absolute;
+        top: 6px;
+        width: 23px;
+        height: 2px;
+        background: #F7F7FA;
+        transition: all 1s ease-in-out;
+    }
+}
+.header__gamburger:hover {
+    cursor: pointer;
+}
+.header__gamburger-active {
+    .line {
+        background: #15141A;
+        -o-transform: rotate(45deg);
+        -webkit-transform:rotate(45deg);
+        -moz-transform:rotate(45deg);
+        transition: all 1s ease-in-out;
+    }
+    .line::before {
+        top: 0px;
+        background: #15141A;
+        -o-transform: rotate(90deg);
+        -webkit-transform:rotate(90deg);
+        -moz-transform:rotate(90deg);
+        transition: all 1s ease-in-out;
+    }
+}

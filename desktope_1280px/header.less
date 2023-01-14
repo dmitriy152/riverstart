@@ -1,0 +1,204 @@
+.header {
+    background-color: #1F2032;
+    padding: 29px 40px 35px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+.header__conteiner__left {
+    display: flex;
+}
+.header__conteiner__right {
+    display: flex;
+    justify-content: center;
+}
+.header__services {
+    position: absolute;
+    top: 24px;
+    left: 159px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .nav__item {
+        text-decoration: none;
+        background: #FFFFFF;
+        border-radius: 42px;
+        padding: 5px 14px;
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 130%;
+        text-align: center;
+        letter-spacing: -0.01em;
+        color: #1F2032;
+        margin-right: 4px;
+    }
+}
+.header__navigation {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    min-width: 260px;
+    position: absolute;
+    top: 29px;
+    right: 240px;
+    .nav__element {
+        text-decoration: none;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 150%;
+        letter-spacing: 0.01em;
+        color: #F7F7FA;
+    }
+    .nav__element-hidden {
+        display: none;
+    }
+}
+.header__popup {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    z-index: 2;
+    top: -1000px;
+    left: 0px;
+    width: 100%;
+    background-color: white;
+    transition: all 2s ease-in-out;
+    .nav__conteiner {
+        display: flex;
+        flex-direction: column;
+        padding: 25px 30px 40px 30px;
+    }
+    .gamburger__logo {
+        margin-bottom: 52px;
+    }
+}
+.nav__list__element {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 133px;
+    .nav__element {
+        text-decoration: none;
+        font-weight: 400;
+        font-size: 38px;
+        line-height: 110%;
+        letter-spacing: -0.02em;
+        color: #15141A;
+        margin-bottom: 36px;
+    }
+}
+.media__social__conteiner {
+    display: flex;
+    justify-content: space-between;
+    margin-right: 412px;
+    h3 {
+        margin: 0px;
+    }
+    .title {
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 120%;
+        letter-spacing: 0.01em;
+        color: #9A9AAD;
+        margin-bottom: 17px;
+    }
+    .e-mail {
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 100%;
+        letter-spacing: 0.01em;
+        color: #15141A;
+        margin-bottom: 17px;
+    }
+    .phone{
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 100%;
+        letter-spacing: 0.01em;
+        color: #15141A;
+    }
+    .link__item {
+        a{
+            text-decoration: none;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 100%;
+            letter-spacing: 0.01em;
+            color: #15141A;
+        }
+    }
+    .facebook {
+        margin-bottom: 12px;
+    }
+    .instagram {
+        margin-bottom: 12px;
+    }
+}
+.header__popup-active {
+    top: 0px;
+    transition: all 2s ease-in-out;
+}
+.header__button__conteiner {
+    position: absolute;
+    top: 16px;
+    right: 40px;
+    display: flex;
+    .header__button {
+        width: 153px;
+        height: 46px;
+        border: none;
+        background: #312DFF;
+        border-radius: 8px;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 100%;
+        text-align: center;
+        color: #F7F7FA;
+    }
+    .header__button:hover{
+        background: #2926D8;
+    }
+    .header__button:active{
+        background: #090FAE;
+    }
+}
+.header__gamburger {
+    display: none;
+    position: absolute;
+    top: 34px;
+    right: 30px;
+    z-index: 5;
+    .line {
+        position: relative;
+        margin-top: 5px;
+        width: 23px;
+        height: 2px;
+        background: #F7F7FA;
+        transition: all 1s ease-in-out;
+    }
+    .line::before {
+        content: "";
+        position: absolute;
+        top: 6px;
+        width: 23px;
+        height: 2px;
+        background: #F7F7FA;
+        transition: all 1s ease-in-out;
+    }
+}
+.header__gamburger:hover {
+    cursor: pointer;
+}
+.header__gamburger-active {
+    .line {
+        background: #15141A;
+        rotate: 45deg;
+        transition: all 1s ease-in-out;
+    }
+    .line::before {
+        top: 0px;
+        background: #15141A;
+        rotate: 90deg;
+        transition: all 1s ease-in-out;
+    }
+}
